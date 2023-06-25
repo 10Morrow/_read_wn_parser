@@ -1,5 +1,4 @@
 import signal
-import sys
 from services import is_valid_url, create_folder_if_not_exists, write_data_to_file,\
     load_state, save_state, create_pickle
 from novel_parser import generate_chapters_link_list
