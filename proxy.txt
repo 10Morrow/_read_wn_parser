@@ -1,12 +1,1 @@
-all proxy should look like ip:port:login:password in each line
-70.38.2.15:11392:A5awyP:6DzwCd
-70.38.2.15:11391:A5awyP:6DzwCd
-70.38.2.15:11390:A5awyP:6DzwCd
-70.38.2.15:11389:A5awyP:6DzwCd
-70.38.2.15:11388:A5awyP:6DzwCd
-70.38.2.15:11387:A5awyP:6DzwCd
-70.38.2.15:11386:A5awyP:6DzwCd
-70.38.2.15:11385:A5awyP:6DzwCd
-70.38.2.15:11384:A5awyP:6DzwCd
-70.38.2.15:11383:A5awyP:6DzwCd
-70.38.2.14:12887:rpd54Z:fAhjWV
+this string is required! remember - all proxy should look like ip:port:login:password in each line
