@@ -49,6 +49,7 @@ def default_request(link, counter = 0):
     headers = {
         'User-Agent': user_agent
     }
+    time.sleep(TIME_DELAY)
     if USE_PROXY:
         global request_counter
         global get_value_func
@@ -62,7 +63,6 @@ def default_request(link, counter = 0):
             'https': f"http://{login}:{password}@{ip}:{port}"
         }
 
-        time.sleep(TIME_DELAY)
         response = requests.get(url=link, headers=headers, proxies=proxies)
     else:
         response = requests.get(url=link, headers=headers)
