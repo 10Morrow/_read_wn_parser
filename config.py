@@ -3,10 +3,9 @@
 # set up 5 sec if you do not use proxy.
 TIME_DELAY = 5
 
-
 #enter number of proxy which you write in 'proxy.txt' file.
 #dont care about it if you do not use proxy
-NUMBER_OF_PROXY = 11
+NUMBER_OF_PROXY = 12
 
 
 # (here should be 'True' if you will use proxy or 'False' if not)

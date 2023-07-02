@@ -60,18 +60,18 @@ def main(state):
         for i, link in enumerate(chapters):
             if "links" in state:
                 if link in state["links"]:
-                    data = state["links"][link]
+                    data_from_chapter = state["links"][link]
                 else:
-                    data = parse_data_from_chapter(link)
+                    data_from_chapter = parse_data_from_chapter(link)
                     if data:
-                        state["links"][link] = data
+                        state["links"][link] = data_from_chapter
             else:
-                data = parse_data_from_chapter(link)
-                if data:
-                    state["links"] = {link: data}
-            if data:
+                data_from_chapter = parse_data_from_chapter(link)
+                if data_from_chapter:
+                    state["links"] = {link: data_from_chapter}
+            if data_from_chapter:
                 state["last_chapter_link"] = i
-                write_data_to_file(name, i,  data)
+                write_data_to_file(name, data_from_chapter["chapter_id"],  data_from_chapter["data"])
     else:
 
         if "page_links" in state:
