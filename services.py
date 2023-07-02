@@ -67,7 +67,7 @@ def default_request(link, counter = 0):
     else:
         response = requests.get(url=link, headers=headers)
     print(link, response.status_code)
-    if (response.status_code == 403 or response.status_code == 429) and counter != 3:
+    if (response.status_code == 403 or response.status_code == 429 or response.status_code == 404) and counter != 3:
         counter += 1
         print(link, f"try again ({counter})")
         default_request(link=link, counter=counter)
@@ -76,7 +76,7 @@ def default_request(link, counter = 0):
 
 def get_pagination_number(link):
     parsed_url = urllib.parse.urlparse(link)
-    path = parsed_url.path
+    path = parsed_url.path[-10:]
     number = re.search(r'\d+', path).group()
 
     return number
