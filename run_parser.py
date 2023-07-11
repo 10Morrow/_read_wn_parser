@@ -10,13 +10,13 @@ def enter_link():
     link = input("enter link: ")
     if not is_valid_url(link):
         print("might you enter wrong link, try again!")
-        enter_link()
-    return link
+        return enter_link()
+    else:
+        return link
 
 
 def handle_interrupt(signal, frame):
     raise Exception("The program was interrupted.")
-
 
 
 def choose_mode():

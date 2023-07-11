@@ -1,4 +1,7 @@
 # _read_wn_parser
+***SCRIPT DOES NOT WORK MORE, BECAUSE OF NEW CLOUDFLARE
+PARAMETRS ON WEBSITE.***
+
 instructions:
 1) enter command "pip install -r requirements.txt"
 2) change proxies in "proxy.txt" list

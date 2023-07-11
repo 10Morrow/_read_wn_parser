@@ -9,4 +9,4 @@ NUMBER_OF_PROXY = 12
 
 
 # (here should be 'True' if you will use proxy or 'False' if not)
-USE_PROXY = False
+USE_PROXY = True
